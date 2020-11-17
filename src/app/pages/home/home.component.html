@@ -1,0 +1,81 @@
+<div class="d-flex" id="wrapper">
+
+  <!-- Sidebar -->
+  <div class="bg border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading text-white">Logo</div>
+    
+    <div class="list-group list-group-flush">  
+        <a [routerLink]="['/home']" routerLinkActive="text-blue" class="list-group-item list-group-item-action bg no-border" ><i class="fas fa-home"></i> Home</a>
+        <a [routerLink]="['/clientes']" routerLinkActive="text-blue" class="list-group-item list-group-item-action bg text-white no-border"><i class="far fa-user"></i> Clientes</a>
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+
+    <app-navbar></app-navbar>
+
+    <div class="container-fluid bg-g">
+
+      <div class="row row-cols-1 row-cols-md-2 mt-4">
+        <div class="col">
+          <app-chartticketsemanal></app-chartticketsemanal>
+
+          <div class="row row-cols-md-2 mt-4">
+            <div class="col"> <app-chartpromedioatencion></app-chartpromedioatencion> </div>
+            <div class="col"> 
+
+              <div class="card">
+                <div class="card-header bg-white">
+                 Usuarios
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item card-nb">
+                    <a class="img-fluid rounded-circle mr-2" href="#"><img class="avatar-s" src="assets/img/user.png" alt="usuario"></a>
+                    Joel Hoil</li>
+                  <li class="list-group-item card-nb">
+                    <a class="img-fluid rounded-circle mr-2" href="#"><img class="avatar-s" src="assets/img/user2.png" alt="usuario"></a>
+                    Roger Euan</li>
+                  <li class="list-group-item card-nb">
+                    <a class="img-fluid rounded-circle mr-2" href="#"><img class="avatar-s" src="assets/img/user.png" alt="usuario"></a>
+                    Salomon Azcorra</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <app-chartclientes></app-chartclientes>
+
+        <div class="row mt-4 mb-4">
+          <div class="col">
+           
+            <div class="card">
+              <div class="card-header bg-white">
+                Últimos Tickets
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <small>#3434</small>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisi</p>
+                </li>
+                <li class="list-group-item">
+                  <small>#3434</small>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisi</p>
+                </li>
+                <li class="list-group-item">
+                  <small>#3434</small>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisi</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>

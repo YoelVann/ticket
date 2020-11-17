@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+.text-grey{
+    color: #BCBCCB;
+}
+.bg-white{
+    background-color: white;
+}
+.h{
+    height: 390px;
+}
+.card-nb{
+    border-bottom: none !important;
+}
+.avatar{
+    max-width: 50px;
+}
+.avatar-s{
+    max-width: 30px;
+}
